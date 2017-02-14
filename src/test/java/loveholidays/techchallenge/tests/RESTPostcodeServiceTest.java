@@ -11,16 +11,16 @@ public class RESTPostcodeServiceTest extends TestCase{
 	private Address[] address = new Address[1];
 	private Address[] addressNull = null;
 	private RESTPostcodeService restPostcodeServiceTest;
-    private RESTPostcodeService restPostcodeServiceMockito;
+        private RESTPostcodeService restPostcodeServiceMockito;
 
 
 	
 	@Override
 	protected void setUp() throws Exception {
 		
-		restPostcodeServiceTest = new RESTPostcodeService();
-		//create mock 
-		restPostcodeServiceMockito = Mockito.spy(RESTPostcodeService.class);
+	restPostcodeServiceTest = new RESTPostcodeService();
+	//create mock 
+	restPostcodeServiceMockito = Mockito.spy(RESTPostcodeService.class);
 		
         address[0] = new Address();
         address[0].setSummaryline(
@@ -124,7 +124,7 @@ public class RESTPostcodeServiceTest extends TestCase{
 	        address = null;
 	        restPostcodeServiceTest = null;
 	        restPostcodeServiceMockito = null;
-	    }
+	}
 	 
 
 
