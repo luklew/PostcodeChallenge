@@ -21,8 +21,8 @@ public class RESTPostcodeController {
     	/*
     	 * Calling the API to search address for each required postcode,
     	 * on exception print out HTTP status code to console
-		 * then building response string using returned JSON mapped onto Address object
-		 */
+         * then building response string using returned JSON mapped onto Address object
+	*/
     	response += postcodeService.getAddressForPostcode("W6 0LG");		        
         response += "<br /><br />";
         response += postcodeService.getAddressForPostcode("SW1A 2AA");
